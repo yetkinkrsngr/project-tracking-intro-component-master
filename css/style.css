@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+}
+:root {
+  /* Primary */
+
+  --Red: hsl(0, 100%, 68%);
+
+  /* Neutral */
+
+  --VeryDarkBlue: hsl(230, 29%, 20%);
+  --DarkGrayishBlue: hsl(230, 11%, 40%);
+  --GrayishBlue: hsl(231, 7%, 65%);
+  --LightGrayishBlue: hsl(207, 33%, 95%);
+}
+
+/* headings nav action-to call */
+/* font-family: 'Barlow Condensed', sans-serif; */
+header {
+  padding: 40px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.menu {
+  margin-left: 40px;
+}
+.menu-ul {
+  display: flex;
+  gap: 80px;
+}
+.menu-ul a {
+  color: var(--VeryDarkBlue);
+  transition: all 0.5s ease;
+}
+.menu-ul a {
+  position: relative;
+}
+
+.menu-ul a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--VeryDarkBlue);
+  transition: width 0.5s ease;
+}
+
+.menu-ul a:hover::before {
+  width: 100%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 40px;
+  gap: 60px;
+}
+.leftSide {
+  border: 1px solid black;
+  padding: 40px;
+}
+.leftSide h2 {
+}
+#new {
+}
+.leftSide h1 {
+}
+.leftSide p {
+}
+
+.rightSide {
+  border: 1px solid red;
+}
+.rightSide img {
+  margin-left: 150px;
+}

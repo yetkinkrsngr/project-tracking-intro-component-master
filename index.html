@@ -16,57 +16,62 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="css/style.css" />
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/7852e4b612.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="menu"><img src="images/logo.svg" alt="" /></div>
-        <div class="menu">
-          <ul class="menu-ul">
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Login</a></li>
-          </ul>
+    <main>
+      <header>
+        <nav>
+          <div class="menu-logo">
+            <a href="#"><img src="images/logo.svg" alt="" /></a>
+          </div>
+          <div class="menu">
+            <ul class="menu-ul">
+              <li><a href="#" class="link">Product</a></li>
+              <li><a href="#" class="link">Features</a></li>
+              <li><a href="#" class="link">Pricing</a></li>
+              <li><a href="#" id="login">Login</a></li>
+            </ul>
+          </div>
+          <div class="icon-menu">
+            <i class="fa-solid fa-bars" id="hamburger"></i>
+        </nav>
+      </header>
+      <section class="container">
+        <div class="leftSide">
+          <h2><span id="new">New</span> Monograph Dashboard</h2>
+          <h1>Powerful insights into your team</h1>
+          <p class="leftSide-p">
+            Project planning and time tracking for agile teams
+          </p>
+          <a href="#" class="btn">
+            <button class="leftSide-btn">Schedule a demo</button></a
+          >
+          <p class="leftSide-p2">to see a live preview</p>
         </div>
-      </nav>
-    </header>
-    <section class="container">
-      <div class="leftSide">
-        <h2><span id="new">New</span> Monograph Dashboard</h2>
-        <h1>Powerful insights into your team</h1>
-        <p>Project planning and time tracking for agile teams</p>
-        <button><a href="#">Schedule a demo</a></button>
-        <p>to see a live preview</p>
-      </div>
-      <div class="rightSide">
-        <img src="images/illustration-devices.svg" alt="" />
-      </div>
-    </section>
-    <div class="bgBlack"></div>
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Yetkin Karasungur</a>.
-      </p>
-    </footer>
+        <div class="rightSide">
+          <img src="images/illustration-devices.svg" alt="" />
+        </div>
+      </section>
+      <div class="bgBlack"></div>
+      <footer>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Yetkin Karasungur</a>.
+        </p>
+      </footer>
+    </main>
     <script src="js/app.js"></script>
   </body>
 </html>
